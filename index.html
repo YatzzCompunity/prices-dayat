@@ -1,124 +1,155 @@
-<!DOCTYPE html><html lang="id">
+<!DOCTYPE html>
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Alfredo Luciano Moretti</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Alfredo Luciano Moretti</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --bg: #111827;
-      --card: #1f2937;
-      --text: #f9fafb;
-      --accent: #60a5fa;
-      --hover: #374151;
-    }* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
-
-body {
-  background: var(--bg);
-  color: var(--text);
-  padding: 2rem;
-}
-
-.container {
-  max-width: 900px;
-  margin: auto;
-  background: var(--card);
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.header img {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 999px;
-  border: 3px solid var(--accent);
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-.section {
-  margin-top: 2rem;
-}
-
-.section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: var(--accent);
-}
-
-.quote {
-  font-style: italic;
-  border-left: 4px solid var(--accent);
-  padding-left: 1rem;
-  margin-top: 1rem;
-}
-
-.button {
-  margin-top: 2rem;
-  display: inline-block;
-  background: var(--accent);
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.button:hover {
-  background: #3b82f6;
-}
-
+    body {
+      font-family: 'Playfair Display', serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+    header {
+      text-align: center;
+      margin-top: 50px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+    }
+    header .tagline {
+      font-size: 1.2em;
+      font-weight: 600;
+      color: #888;
+    }
+    .profile-pic {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      margin: 20px auto;
+    }
+    .biodata, .details, .quote, .message {
+      background: #fff;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      font-size: 1.8em;
+      color: #444;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .quote blockquote {
+      font-style: italic;
+      font-size: 1.4em;
+      color: #555;
+      border-left: 5px solid #007BFF;
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #888;
+    }
+    footer p {
+      margin: 0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    textarea {
+      padding: 15px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+      min-height: 100px;
+      width: 100%;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1em;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <img src="https://i.ibb.co.com/S4WzNDFv/images-1.jpg" alt="foto Alfredo">
-      <div>
-        <h1>Alfredo Luciano Moretti</h1>
-        <p>Psikiater | OMH & Moonlight Hospital</p>
-        <p>Mahasiswa Hukum - Universitas Jayanegara</p>
-      </div>
-    </div><div class="section">
-  <h2>Biodata</h2>
-  <p>Nickname: Alfredo</p>
-  <p>Muse: Jaehyun</p>
-  <p>Nomor WhatsApp: <a href="https://wa.me/62895415147402" style="color: var(--accent);">Klik untuk konsultasi</a></p>
-</div>
+    <header>
+      <img src="https://i.ibb.co.com/S4WzNDFv/images-1.jpg" alt="Foto Alfredo" class="profile-pic" />
+      <h1>Alfredo Luciano Moretti</h1>
+      <p class="tagline">Psikiater | Mahasiswa Ilmu Hukum UNJAYA | Muse: Jaehyun</p>
+    </header>
 
-<div class="section">
-  <h2>Tentang Saya</h2>
-  <p>Saya adalah seorang psikiater roleplay aktif yang memiliki latar belakang hukum dan aktif berkegiatan di OMH dan Moonlight Hospital. Saya mengedepankan pendekatan edukatif dan profesional dalam setiap penanganan kasus RP.</p>
-</div>
+    <section class="biodata">
+      <h2>Bio Singkat</h2>
+      <p>Seorang psikiater berdedikasi di OMH dan mahasiswa Ilmu Hukum di Universitas Jayanegara. Tertarik pada filsafat, psikologi, dan dunia konsultasi mental yang humanistik.</p>
+    </section>
 
-<div class="section">
-  <h2>Quotes Filosofi</h2>
-  <p class="quote">"Reason is the light that guides us through the shadow of illusion."</p>
-</div>
+    <section class="details">
+      <h2>Informasi</h2>
+      <ul>
+        <li><strong>Jabatan:</strong> Dokter Psikiater di Oddysey Medical Hospital</li>
+        <li><strong>Universitas:</strong> Universitas Jayanegara</li>
+        <li><strong>No. WhatsApp:</strong> <a href="https://wa.me/62895415147402" target="_blank">Klik untuk Konsultasi</a></li>
+      </ul>
+    </section>
 
-<div class="section">
-  <h2>Pesan Anonim</h2>
-  <form action="https://formspree.io/f/moqzkwda" method="POST">
-    <textarea name="message" placeholder="Tulis pesanmu di sini..." required style="width: 100%; height: 120px; padding: 1rem; margin-top: 1rem; background: var(--hover); border: none; color: white; border-radius: 0.5rem;"></textarea>
-    <button type="submit" class="button">Kirim Anonim</button>
-  </form>
-</div>
+    <section class="quote">
+      <h2>Quotes Filosofis</h2>
+      <blockquote>“Aku tidak mengobati gangguan pikiran — aku memeluknya, dan membuat mereka paham dirinya sendiri.”</blockquote>
+    </section>
 
+    <section class="message">
+      <h2>Kirim Pesan Anonim</h2>
+      <form action="https://formspree.io/f/yourformid" method="POST">
+        <textarea name="message" placeholder="Tulis pesanmu di sini..." required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Alfredo Luciano Moretti. All rights reserved.</p>
+    </footer>
   </div>
+
+  <!-- Menambahkan musik latar -->
+  <audio autoplay loop>
+    <source src="https://on.soundcloud.com/Pr9R3FMJPRyDzXgA9" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
 </body>
 </html>
